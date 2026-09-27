@@ -281,23 +281,148 @@ the student. Your task is to write a code  to perform these calculations. */
 // The station master wants to know how much time the train will take to completely cross the platform. 
 // Your task is to write a code to calculate the time taken in seconds.
 
-#include <iostream>
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     double train_length, speed_kmh, platfrom_length;
+//     cout<<"Enter the train speed : ";
+//     cin>>speed_kmh;
+//     cout<<"Enter the train length : ";
+//     cin>>train_length;
+//     cout<<"Enter the platfrom length : ";
+//     cin>>platfrom_length;
+//     double speed_ms = speed_kmh * (5.0/18.0);
+//     double time_taken = (train_length + platfrom_length)/speed_ms;
+//     cout<<"Time taken by train is "<<time_taken<<" seconds"<<endl;
+//     return 0;
+// }
+
+//18. Bank balance status
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int balance;
+//     cout<<"Enter the balance : ";
+//     cin>>balance;
+//     if(balance>0) cout<<"Positive";
+//     else if(balance<0) cout<<"Negative";
+//     else cout<<"zero";
+// }
+
+
+// //19. Bill divisibility 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int amount;
+//     cout<<"Enter the amount : ";
+//     cin>>amount;
+//     if(amount % 5 == 0) cout<<"Discount applicable";
+//     else cout<<"no discount";
+// }
+
+////20. VOTING ELIGIBILITY
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int age;
+//     cout<<"Enter the age : ";
+//     cin>>age;
+//     if(age>=18) cout<<"ELigible for vote";
+//     else cout<<"not eligible";
+// }
+
+// //21. Even or odd
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int num;
+//     cout<<"Enter the number : ";
+//     cin>>num;
+//     if(num % 2 == 0) cout<<"EVEN ";
+//     else cout<<"ODD";
+// }
+
+////22. HIGHER SCORE 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int a , b;
+//     cout<<"Enter the score of friend a : ";
+//     cin>>a;
+//     cout<<"Enter the score of friend b : ";
+//     cin>>b;
+//     if(a>b) cout<<"Friend a";
+//     else if(a == b) cout<<"Tie ";
+//     else cout<<"Friend b ";
+// }
+
+
+////23. PORFIT OR LOSS
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     double cost_price, selling_price;
+//     cout<<"Enter the cost price : ";
+//     cin>>cost_price;
+//     cout<<"Enter the selling price : ";
+//     cin>>selling_price;
+//     if(cost_price < selling_price) cout<<"Profit";
+//     else if(cost_price == selling_price) cout<<"No profit no loss";
+//     else cout<<"Loss";
+// }
+
+//// 24. HIGHEST OF THREE
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int a, b, c;
+//     cout<<"Enter the score of friend a : ";
+//     cin>>a;
+//     cout<<"Enter the score of friend b : ";
+//     cin>>b;
+//     cout<<"Enter the score of friend c : ";
+//     cin>>c;
+//     if(a<b){
+//         if(b>c) cout<<"B scores highest";
+//         else cout<<"C scores highest";
+//     }
+//     else if(a>b){
+//         if(a>c) cout<<"A scores highest";
+//         else cout<<"C scores highest";
+//     }
+//     return 0;
+// }
+
+
+////vowel and consonant 
+#include<iostream>
 using namespace std;
 int main(){
-    double train_length, speed_kmh, platfrom_length;
-    cout<<"Enter the train speed : ";
-    cin>>speed_kmh;
-    cout<<"Enter the train length : ";
-    cin>>train_length;
-    cout<<"Enter the platfrom length : ";
-    cin>>platfrom_length;
-    double speed_ms = speed_kmh * (5.0/18.0);
-    double time_taken = (train_length + platfrom_length)/speed_ms;
-    cout<<"Time taken by train is "<<time_taken<<" seconds"<<endl;
-    return 0;
+    bool flag = false;
+    char character;
+    cout<<"Enter the character : ";
+    cin>>character;
+    if(character == 'a'){
+        flag = true;
+    }
+    if(character == 'e'){
+        flag = true;
+    }
+    if(character == 'i'){
+        flag = true;
+    }
+    if(character == 'o'){
+        flag = true;
+    }
+    if(character == 'u'){
+        flag = true;
+    }
+
+if(flag == true) cout<<"Vowel";
+else cout<<"consonant";
+return 0;
+    
 }
-
-
-
-
 

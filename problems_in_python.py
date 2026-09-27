@@ -152,9 +152,98 @@
 # The station master wants to know how much time the train will take to completely cross the platform. 
 # Your task is to write a code  to calculate the time taken in seconds.
 
-train_length = int(input("Enter the length of train : "))
-platform_length = int(input("Enter the length of platform : "))
-speed_kmh= int(input("Enter the speed of train : "))
-speed_ms = speed_kmh * (5/18) 
-time_taken = (train_length + platform_length)/speed_ms
-print(f"Time taken by train is {time_taken} seconds ")
+# train_length = int(input("Enter the length of train : "))
+# platform_length = int(input("Enter the length of platform : "))
+# speed_kmh= int(input("Enter the speed of train : "))
+# speed_ms = speed_kmh * (5/18) 
+# time_taken = (train_length + platform_length)/speed_ms
+# print(f"Time taken by train is {time_taken} seconds ")
+
+# # 18. Bank balance status 
+# balance = int(input("Enter the balance : "))
+# if(balance>0):
+#     print("positive")
+# elif(balance == 0):
+#         print("Zero")
+# else:
+#     print("Negative")
+
+# #19. BILL DIVISIBILITY 
+
+# amount = int(input("Enter the number : "))
+# if(amount % 5 == 0 ):
+#     print("Discount applicable")
+# else:
+#     print("no discount")
+
+# # 20. VOTING ELIGIBILTY 
+# age = int(input("Enter the number : "))
+# if(age >= 18):
+#     print("Eligible for vote :) ")
+# else:
+#     print("Not eligible for vote :( ")
+
+## 21. Even or odd
+# num = int(input("Enter the number : "))
+# if(num % 2 == 0):
+#     print("Even")
+# else:
+#     print("Odd")
+
+## 22. HIGHER SCORE 
+# a = int(input("Enter the score of friend a : "))
+# b = int(input("Enter the score of friend b : "))
+# if(a>b):
+#     print("Friend a")
+# elif(a == b):
+#     print("Tie")
+# else:
+#     print("Friend b")
+
+##23. PROFIT OR LOSS
+# cost_price = int(input("Enter the cost price : "))
+# selling_price = int(input("Enter the selling price : "))
+# if(cost_price < selling_price):
+#     print("Profit")
+# elif(cost_price == selling_price):
+#     print("No profit no loss")
+# else:
+#     print("Loss")
+
+##24. HIGHEST OF THREE
+# a = int(input("Enter the score of playyer a : "))
+# b = int(input("Enter the score of player b : "))
+# c = int(input("Enter the score of player c  :"))
+# if(a<b):
+#     if(b>c):
+#         print("B scores highest")
+#     else:
+#         print("C scores highest")
+# elif(a>b):
+#     if(a>c):
+#         print("A scores highest")
+#     else:
+#         print("C scores highest")
+    
+## 25. Vowel or consonant
+character = input("Enter the character : ")
+flag = True 
+if(character == 'a'):
+    flag = False
+elif(character == 'e'):
+    flag = False
+elif(character == 'i'):
+    flag = False
+elif(character == 'o'):
+    flag = False
+elif(character == 'u'):
+    flag = False
+
+if(flag == False):
+    print("Vowel")
+else:
+    print("Consonant")
+
+
+
+

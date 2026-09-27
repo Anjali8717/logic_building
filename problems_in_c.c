@@ -1,6 +1,7 @@
 /* Q1.A farmer wants to put a fence around his rectangular garden and also plant grass inside it. 
  Your task is to write a code to calculate the total area to be covered with grass and 
  the total length of fencing required for the garden.*/
+ 
 // #include <stdio.h>
 // int main(){
 //     double length, breadth, area;
@@ -268,24 +269,141 @@ the student. Your task is to write a code  to perform these calculations. */
 // The station master wants to know how much time the train will take to completely cross the platform. 
 // Your task is to write a code to calculate the time taken in seconds.
 
-#include <stdio.h>
-int main() {
-    double train_length, speed_kmh, platfrom_length;
+// #include <stdio.h>
+// int main() {
+//     double train_length, speed_kmh, platfrom_length;
     
-    printf("Enter the train speed : ");
-    scanf("%lf", &speed_kmh);
+//     printf("Enter the train speed : ");
+//     scanf("%lf", &speed_kmh);
     
-    printf("Enter the train length : ");
-    scanf("%lf", &train_length);
+//     printf("Enter the train length : ");
+//     scanf("%lf", &train_length);
     
-    printf("Enter the platfrom length : ");
-    scanf("%lf", &platfrom_length);
+//     printf("Enter the platfrom length : ");
+//     scanf("%lf", &platfrom_length);
     
-    double speed_ms = speed_kmh * (5.0 / 18.0);
-    double time_taken = (train_length + platfrom_length) / speed_ms;
+//     double speed_ms = speed_kmh * (5.0 / 18.0);
+//     double time_taken = (train_length + platfrom_length) / speed_ms;
     
-    printf("Time taken by train is %g seconds\n", time_taken);
+//     printf("Time taken by train is %g seconds\n", time_taken);
     
-    return 0;
-}
+//     return 0;
+// }
 
+////18. BANK BALANCE STATUS 
+// #include<stdio.h>
+// int main(){
+//     double balance;
+//     printf("Enter the balance : ");
+//     scanf("%lf", &balance);
+//     if(balance>0) printf("positive");
+//     else if(balance<0) printf("negative");
+//     else printf("Zero");
+// }
+
+////19. BILL DIVISIBILITY 
+// #include<stdio.h>
+// int main(){
+//     int amount;
+//     printf("Enter the amount : ");
+//     scanf("%ld", &amount);
+//     if(amount % 5 == 0) printf("discount applicable");
+//     else printf("no discount");
+// }
+
+////20. VOTE ELIGIBILITY 
+// #include<stdio.h>
+// int main(){
+//     double age;
+//     printf("Enter the age : ");
+//     scanf("%lf", &age);
+//     if(age >= 18) printf("eligible for voting");
+//     else printf("not eligible");
+// }
+
+////21. ODD OR EVEN
+
+// #include<stdio.h>
+// int main(){
+//     int num;
+//     printf("Enter the num : ");
+//     scanf("%ld", &num);
+//     if(num % 2 == 0) printf("EVEN");
+//     else printf("ODD");
+// }
+
+////22. HIGHER SCORE 
+// #include<stdio.h>
+// int main(){
+//     int a, b;
+//     printf("Enter the score of friend a : ");
+//     scanf("%ld", &a);
+//     printf("Enter the score of friend b : ");
+//     scanf("%ld", &b);
+//     if(a > b) printf("Friend a");
+//     else if(a == b) printf("Tie");
+//     else printf("Friend b");
+// }
+
+////23. PROFIT AND LOSS
+// #include<stdio.h>
+// int main(){
+//     double cost_price, selling_price;
+//     printf("Enter the cost price : ");
+//     scanf("%lf", &cost_price);
+//     printf("Enter the selling price : ");
+//     scanf("%lf", &selling_price);
+//     if(cost_price < selling_price) printf("Profit");
+//     else if(cost_price == selling_price) printf("NO PROFIT NO LOSS");
+//     else printf("loss");
+// }
+
+////24. HIGHEST OF THREE
+// #include<stdio.h>
+// int main(){
+//     int a, b, c;
+//     printf("Enter the score of friend a : ");
+//     scanf("%ld", &a);
+//     printf("Enter the score of friend b : ");
+//     scanf("%ld", &b);
+//     printf("Enter the score of friend c : ");
+//     scanf("%ld", &c);
+//     if(a<b){
+//         if(b>c) printf("B scores highest");
+//         else printf("C scores highest");
+//     }
+//     else if(a>b){
+//         if(a>c) printf("A scores highest");
+//         else printf("C scores highest");
+//     }
+//     return 0;
+
+// }
+
+////CONSONANT AND VOWEL 
+#include<stdio.h>
+int main(){
+    int flag = 0;
+    char character;
+    printf("Enter the character : ");
+    scanf("%c", &character);
+    if(character == 'a'){
+        flag = 1;
+    }
+    if(character == 'e'){
+        flag = 1;
+    }
+    if(character == 'i'){
+        flag = 1;
+    }
+    if(character == 'o'){
+        flag = 1;
+    }
+    if(character == 'u'){
+        flag = 1;
+    }
+
+if(flag == 1) printf("vowel");
+else printf("Consonant");
+
+}
