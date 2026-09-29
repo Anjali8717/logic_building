@@ -396,33 +396,128 @@ the student. Your task is to write a code  to perform these calculations. */
 // }
 
 
-////vowel and consonant 
+//// 25.vowel and consonant 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     bool flag = false;
+//     char character;
+//     cout<<"Enter the character : ";
+//     cin>>character;
+//     if(character == 'a'){
+//         flag = true;
+//     }
+//     if(character == 'e'){
+//         flag = true;
+//     }
+//     if(character == 'i'){
+//         flag = true;
+//     }
+//     if(character == 'o'){
+//         flag = true;
+//     }
+//     if(character == 'u'){
+//         flag = true;
+//     }
+
+// if(flag == true) cout<<"Vowel";
+// else cout<<"consonant";
+// return 0;
+    
+// }
+
+//// 26MULTIPLE OF 2 3
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int a;
+//     cout<<"Enter the value of a : ";
+//     cin>>a;
+//     if(a%2 == 0){
+//         if(a%3==0){
+//             cout<<"Multiple of both 2 and 3";
+//         }
+//         else cout<<"Multiple of 2";
+//     }
+//     else if(a%2 != 0){
+//         if(a%3 == 0){
+//             cout<<"Multiple of 3";
+//         }
+//         else cout<<"Neither multiple of 2 nor of 3";
+//     }
+//     return 0;
+// }
+
+////27.AUTOMATIC GRADE GENERATOR
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int marks;
+//     cout<<"Enter the marks : ";
+//     cin>>marks;
+//     if(marks >= 90){
+//         cout<<"Grade A";
+//     }
+//     else if(marks >= 75){
+//         cout<<"Grade B";
+//     }
+//     else if(marks >=50){
+//         cout<<"Grade C";
+//     }
+//     else cout<<"Fail";
+// }
+
+// // 28. VOTING + SENIOR CITIZEN 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int age;
+//     cout<<"Enter the age : ";
+//     cin>>age;
+//     if(age >= 18){
+//         cout<<"Eligible for voting"<<endl;
+//         if(age>= 60){
+//         cout<<"Voter is senior citizen";
+//         }
+//     }
+//     else cout<<"Not eligible";
+// }
+
+// // 29. HIGHEST OF FOUR TEAMS 
 #include<iostream>
 using namespace std;
 int main(){
-    bool flag = false;
-    char character;
-    cout<<"Enter the character : ";
-    cin>>character;
-    if(character == 'a'){
-        flag = true;
+    int a, b, c, d;
+    cout<<"Enter the scores of team a, b, c and d : ";
+    cin>>a>>b>>c>>d;
+    if(a>b){
+        if(a>c){
+            if(a>d){
+                cout<<"Team a scores the highest";
+            }else{
+                cout<<"Team d scores the highest";
+            }
+        }else{
+            if(c>d){
+                cout<<"c scores the highest";
+            }else{
+                cout<<"Team d scores the highest";
+            }
+        }
+    }else{
+        if(b>c){
+            if(b>d){
+                cout<<"Team b scores the highest";
+            }else{
+                cout<<"Team d scores the highest";
+            }
+        }else{
+            if(c>d){
+                cout<<"Team c scores the highest";
+            }else{
+                cout<<"Team d scores the highest";
+            }
+        }
     }
-    if(character == 'e'){
-        flag = true;
-    }
-    if(character == 'i'){
-        flag = true;
-    }
-    if(character == 'o'){
-        flag = true;
-    }
-    if(character == 'u'){
-        flag = true;
-    }
-
-if(flag == true) cout<<"Vowel";
-else cout<<"consonant";
-return 0;
-    
+    return 0;
 }
-

@@ -380,30 +380,86 @@ the student. Your task is to write a code  to perform these calculations. */
 
 // }
 
-////CONSONANT AND VOWEL 
-#include<stdio.h>
-int main(){
-    int flag = 0;
-    char character;
-    printf("Enter the character : ");
-    scanf("%c", &character);
-    if(character == 'a'){
-        flag = 1;
-    }
-    if(character == 'e'){
-        flag = 1;
-    }
-    if(character == 'i'){
-        flag = 1;
-    }
-    if(character == 'o'){
-        flag = 1;
-    }
-    if(character == 'u'){
-        flag = 1;
-    }
+////25. CONSONANT AND VOWEL 
+// #include<stdio.h>
+// int main(){
+//     int flag = 0;
+//     char character;
+//     printf("Enter the character : ");
+//     scanf("%c", &character);
+//     if(character == 'a'){
+//         flag = 1;
+//     }
+//     if(character == 'e'){
+//         flag = 1;
+//     }
+//     if(character == 'i'){
+//         flag = 1;
+//     }
+//     if(character == 'o'){
+//         flag = 1;
+//     }
+//     if(character == 'u'){
+//         flag = 1;
+//     }
 
-if(flag == 1) printf("vowel");
-else printf("Consonant");
+// if(flag == 1) printf("vowel");
+// else printf("Consonant");
 
-}
+// }
+
+// //26. MUTLIPLE OF 2 AND 3
+// #include<stdio.h>
+// int main(){
+//     int a;
+//     printf("Enter the value of a : ");
+//     scanf("%ld", &a);
+//     if(a%2 == 0){
+//         if(a%3==0){
+//             printf("Multiple of both 2 and 3");
+//         }
+//         else printf("Multiple of 2");
+//     }
+//     else if(a%2 != 0){
+//         if(a%3 == 0){
+//             printf("Multiple of 3");
+//         }
+//         else printf("Neither multiple of 2 nor of 3");
+//     }
+//     return 0;
+// }
+
+// // 27.AUTOMATIC GRADE GENERATOR 
+// #include<stdio.h>
+// int main(){
+//     int marks;
+//     printf("Enter the marks : ");
+//     scanf("%ld", &marks);
+//     if(marks >= 90){
+//         printf("Grade A");
+//     }
+//     else if(marks >= 75){
+//         printf("Grade B");
+//     }
+//     else if(marks >=50){
+//         printf("Grade C");
+//     }
+//     else printf("Fail");
+// }
+
+// // 28. voting + senior citizen
+// #include<stdio.h>
+// int main(){
+//     int age;
+//     printf("Enter the age : ");
+//     scanf("%ld", &age);
+//     if(age >= 18){
+//         printf("Eligible for voting\n");
+//         if(age>= 60){
+//         printf("Voter is senior citizen");
+//         }
+//     }
+//     else printf("Not eligible");
+// }
+
+// //29. 

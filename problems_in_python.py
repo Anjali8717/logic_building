@@ -226,24 +226,82 @@
 #         print("C scores highest")
     
 ## 25. Vowel or consonant
-character = input("Enter the character : ")
-flag = True 
-if(character == 'a'):
-    flag = False
-elif(character == 'e'):
-    flag = False
-elif(character == 'i'):
-    flag = False
-elif(character == 'o'):
-    flag = False
-elif(character == 'u'):
-    flag = False
+# character = input("Enter the character : ")
+# flag = True 
+# if(character == 'a'):
+#     flag = False
+# elif(character == 'e'):
+#     flag = False
+# elif(character == 'i'):
+#     flag = False
+# elif(character == 'o'):
+#     flag = False
+# elif(character == 'u'):
+#     flag = False
 
-if(flag == False):
-    print("Vowel")
+# if(flag == False):
+#     print("Vowel")
+# else:
+#     print("Consonant")
+
+##26. MULTIPLE OF 2 , 3 MULTIPLE OF BOTH 2  AND 3 , NEITHER OF 2 AND 3
+# a = int(input("Enter the number : "))
+# if(a%2 == 0):
+#     if(a%3 == 0):
+#         print("Multiple of both 2 and 3")
+#     elif(a%3 !=0):
+#             print("Multiple of 2")
+# elif(a%2 !=0):
+#     if(a%3 == 0):
+#         print("Multiple of 3")
+#     else:
+#         print("Neither multiple of 2 nor of 3")
+    
+##27. Automatic grade generator 
+# marks = int(input("Enter the marks : "))
+# if(marks >= 90):
+#     print("Grade A")
+# elif(marks >=75):
+#     print("Grade B")
+# elif(marks >= 50):
+#     print("Grade C")
+# else:
+#     print("Fail")
+
+
+# # 28.VOTING + SENIOR CITIZEN 
+# age = int(input("Enter the age : "))
+# if(age>= 18):
+#     print("ELgible for voting")
+#     if(age>= 60):
+#         print("Voter is senior citizen")
+# else: 
+#     print("Not eligible for voting")
+
+# #29. HIGHEST OF FOUR TEAMS 
+a = int(input("Enter score of team a : "))
+b = int(input("Enter score of team b : "))
+c = int(input("Enter score of team c : "))
+d = int(input("Enter score of team d : "))
+if(a>b):
+    if(a>c):
+        if(a>d):
+            print("Team a scores highest")
+        else:
+            print("Team d scores highest")
+    else:
+        if(c>d):
+            print("Team c scores highest")
+        else:
+            print("Team d scores the highest")
 else:
-    print("Consonant")
-
-
-
-
+    if(b>c):
+        if(b>d):
+            print("Team b scores the highest")
+        else:
+            print("Team d scores the highest")
+    else:
+        if(c>d):
+            print("Team c scores the highest")
+        else:
+            print("Team d scores the highest")
