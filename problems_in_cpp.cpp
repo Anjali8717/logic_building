@@ -484,40 +484,210 @@ the student. Your task is to write a code  to perform these calculations. */
 // }
 
 // // 29. HIGHEST OF FOUR TEAMS 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int a, b, c, d;
+//     cout<<"Enter the scores of team a, b, c and d : ";
+//     cin>>a>>b>>c>>d;
+//     if(a>b){
+//         if(a>c){
+//             if(a>d){
+//                 cout<<"Team a scores the highest";
+//             }else{
+//                 cout<<"Team d scores the highest";
+//             }
+//         }else{
+    //         if(c>d){
+    //             cout<<"c scores the highest";
+    //         }else{
+    //             cout<<"Team d scores the highest";
+    //         }
+    //     }
+    // }else{
+    //     if(b>c){
+    //         if(b>d){
+    //             cout<<"Team b scores the highest";
+//             }else{
+//                 cout<<"Team d scores the highest";
+//             }
+//         }else{
+//             if(c>d){
+//                 cout<<"Team c scores the highest";
+//             }else{
+//                 cout<<"Team d scores the highest";
+//             }
+//         }
+//     }
+//     return 0;
+// }
+
+
+// //30 TRIANGLE TYPE
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int a, b, c;
+//     cout<<"Enter all three sides of triangle : ";
+//     cin>>a>>b>>c;
+//     if(a==b){
+//         if(b==c){
+//             cout<<"Equilateral triangle ";
+//         }else{
+//             cout<<"Isosceles triangle";
+//         }
+//     }else{
+//         cout<<"Scalene";
+//     }
+//     return 0;
+// }
+
+// //31. Electricity bill
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     double units, total_bill = 0;
+//     cout<<"Enter the units : ";
+//     cin>>units;
+//     if(units <=100){
+//         total_bill = units * 1.5;
+//     }
+//     else if(units <=200){
+//         total_bill = units * 2.5;
+//     }
+//     else{
+//         total_bill = units * 4;
+//     }
+//     cout<<"total bill = "<<total_bill;
+//     return 0;
+// }
+
+// // 32. CHARACTER CLASSIFIER
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     char ch;
+//     cout<<"Enter the character : ";
+//     cin>>ch;
+//     if(ch>=48){
+//             if(ch<=57){
+//                 cout<<"Digits";
+//         }else if(ch>=97){
+//             if(ch<=122){
+//                 cout<<"Lowercase";
+//         }
+//         }else if(ch>=65){
+//             if(ch <= 90){
+//                 cout<<"Uppercase";
+//             }
+//         } else{
+//         cout<<"Special character ";
+//     }
+//     }
+// }
+
+// // //33. CASE CONVERTER 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     char ch;
+//     cout<<"Enter the character : ";
+//     cin>>ch;
+//         if(ch>=97){
+//             if(ch<=122){
+//                 cout<<char(ch - 32);
+//         }
+//         }else if(ch>=65){
+//             if(ch <= 90){
+//                 cout<<char(ch + 32);
+//             }
+//         } else{
+//         cout<<ch;
+//     }
+//     }
+
+// // ####################################### SET 3 ###########################################
+// // 1. THE WEEKLY PLANNER 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int day;
+//     cout<<"Enter the value : ";
+//     cin>>day;
+//     switch(day)
+//     {
+//     case 1:
+//         cout<<"Monday";
+//     break;
+//     case 2:
+//         cout<<"Tuesday";
+//     break;
+//     case 3:
+//         cout<<"Wednesday";
+//     break;
+//     case 4:
+//         cout<<"Thursday";
+//     break;
+//     case 5:
+//         cout<<"Friday";
+//     break;
+//     case 6:
+//         cout<<"Saturday";
+//     break;
+//     case 7:
+//         cout<<"Sunday";
+//     break;
+//     default:
+//         cout<<"Invalid";
+//     }
+// }
+
+// //2. THE POCKET CALCULATOR 
+// #include<iostream>
+// #include<limits>
+// using namespace std;
+// int main(){
+//     double a, b;
+//     char op;
+//     cout<<"Enter the value of a : ";
+//     cin>>a;
+//     cout<<"Enter the operator : ";
+//     cin>>op;
+//     cout<<"Enter the value of b : ";
+//     cin>>b;
+//     switch(op)
+//     {
+//     case '+':
+//         cout<<a+b;
+//     break;
+//     case '-':
+//         cout<<a-b;
+//     break;
+//     case '/':
+//         cout<<a/b;
+//     break;
+//     case '*':
+//         cout<<a*b;
+//     break;
+//     case '%':
+//         if(static_cast<int>(b) != 0){
+//             cout<<static_cast<int>(a) % static_cast<int>(b);
+//         }else{
+//             cout<<"Error: Division by zero";
+//         }
+//     break;
+//     default:
+//         cout<<"Invalid";
+//     }
+// }
+
+// //3. THE ENGLISH LEARNING ASSISTANT
+// The program receives one character. If it is a vowel, report “Vowel”. If it is an alphabet but not a 
+// vowel, report “Consonant”. Any non-alphabet character should be reported as invalid
+
 #include<iostream>
 using namespace std;
 int main(){
-    int a, b, c, d;
-    cout<<"Enter the scores of team a, b, c and d : ";
-    cin>>a>>b>>c>>d;
-    if(a>b){
-        if(a>c){
-            if(a>d){
-                cout<<"Team a scores the highest";
-            }else{
-                cout<<"Team d scores the highest";
-            }
-        }else{
-            if(c>d){
-                cout<<"c scores the highest";
-            }else{
-                cout<<"Team d scores the highest";
-            }
-        }
-    }else{
-        if(b>c){
-            if(b>d){
-                cout<<"Team b scores the highest";
-            }else{
-                cout<<"Team d scores the highest";
-            }
-        }else{
-            if(c>d){
-                cout<<"Team c scores the highest";
-            }else{
-                cout<<"Team d scores the highest";
-            }
-        }
-    }
-    return 0;
+    char ch;
+    
 }

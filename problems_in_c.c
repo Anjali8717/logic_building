@@ -462,4 +462,472 @@ the student. Your task is to write a code  to perform these calculations. */
 //     else printf("Not eligible");
 // }
 
-// //29. 
+// //29. Highest of four teams
+// #include<stdio.h>
+// int main(){
+//     int a, b, c, d;
+//     printf("Enter the scores of team a, b, c, d : ");
+//     scanf("%d %d %d %d", &a, &b, &c, &d);
+//     if(a>b){
+//         if(a>c){
+//             if(a>d){
+//                 printf("Team a scores the highest");
+//             }else{
+//                 printf("Team d scores the highest");
+//             }
+//         }else{
+//             if(c>d){
+//                 printf("c scores the highest");
+//             }else{
+//                 printf("Team d scores the highest");
+//             }
+//         }
+//     }else{
+//         if(b>c){
+//             if(b>d){
+//                 printf("Team b scores the highest");
+//             }else{
+//                 printf("Team d scores the highest");
+//             }
+//         }else{
+//             if(c>d){
+//                 printf("Team c scores the highest");
+//             }else{
+//                 printf("Team d scores the highest");
+//             }
+//         }
+//     }
+//     return 0;
+// }
+
+// //30. TRIANGLE TYPE
+// #include<stdio.h>
+// int main(){
+//     double a, b, c;
+//     printf("Enter all three sides of triangle : ");
+//     scanf("%lf %lf %lf %lf", &a, &b, &c);
+//     if(a==b){
+//         if(b==c){
+//             printf("Equilateral triangle");
+//         }else{
+//             printf("Isosceles triangle");
+//         }
+//     }else{
+//         printf("Scalene");
+//     }
+// }
+
+// // 31. Electricity bill
+// #include<stdio.h>
+// int main(){
+//     double units, total_bill = 0.00;
+//     printf("Enter the units : ");
+//     scanf("%lf", &units);
+//     if(units <=100){
+//         total_bill = units * 1.5;
+//     }
+//     else if(units <=200){
+//         total_bill = units * 2.5;
+//     }
+//     else{
+//         total_bill = units * 4;
+//     }
+//     printf("Total bill = %.2lf\n", total_bill);
+// }
+
+// // 32. CHARACTER CLASSIFIER
+// #include<stdio.h>
+    // int main(){
+    // char ch;
+    // printf("Enter the character : ");
+    // scanf("%c", &ch);
+    // if(ch>=48){
+    //         if(ch<=57){
+    //             printf("Digits");
+    //     }else if(ch>=97){
+    //         if(ch<=122){
+    //             printf("Lowercase");
+    //     }
+    //     }else if(ch>=65){
+    //         if(ch <= 90){
+    //             printf("Uppercase");
+    //         }
+    //     } else{
+    //     printf("Special character ");
+    // }
+    // }
+// }
+
+// // 33. CASE CONVERTER 
+// #include<stdio.h>
+// int main(){
+//     char ch;
+//     printf("Enter the character : ");
+//     scanf("%c", &ch);
+//         if(ch>=97){
+//             if(ch<=122){
+//                 printf("%c\n", ch - 32);
+//         }
+//         }else if(ch>=65){
+//             if(ch <= 90){
+//                 printf("%c\n", ch + 32);
+//             }
+//         } else{
+//         printf("%c\n", ch);
+//     }
+// }
+
+///////////////////////////////////////////////// SET 3 ///////////////////////////////////////
+//1. THE WEEKLY PLANNER 
+// #include<stdio.h>
+// int main(){
+//     int day;
+//     printf("Enter the number : ");
+//     scanf("%d", &day);
+//     switch (day)
+//     {
+//     case 1:
+//         printf("Moday");
+//         break;
+//     case 2:
+//         printf("Tuesday");
+//         break;
+//     case 3:
+//         printf("Wednesday");
+//         break;
+//     case 4:
+//         printf("Thursday");
+//         break;
+//     case 5:
+//         printf("Friday");
+//         break;
+//     case 6:
+//         printf("Saturday");
+//         break;
+//     case 7:
+//         printf("Sunday");
+//         break;
+    
+//     default:
+//         printf("Invalid");
+//         break;
+//     }
+// }
+
+// //2. THE POCKET CALCULATOR
+// #include<stdio.h>
+// int main(){
+//     double a, b;
+//     char op;
+//     printf("Enter the value of a : ");
+//     scanf("%lf", &a);
+//     printf("Enter the value of b : ");
+//     scanf("%lf", &b);
+//     printf("Enter the operator : ");
+//     scanf(" %c", &op);
+//     switch (op)
+//     {
+//     case '+':
+//         printf("%.2lf", a+b);
+//         break;
+//     case '-':
+//         printf("%.2lf", a-b);
+//         break;
+//     case '*':
+//         printf("%.2lf", a*b);
+//         break;
+//     case '/':
+//         printf("%.2lf", a/b);
+//     case '%':
+//         if((int)b != 0){
+//             printf("%.d", (int)a % (int)b);
+//         }else{
+//             printf("Error : Division by 0");
+//         }
+//         break;
+//     default:
+//         printf("Invalid!");
+//         break;
+//     }
+// }
+
+// //3. THE ENGLISH LEARNING ASSISTANT
+// The program receives one character. If it is a vowel, report “Vowel”. If it is an alphabet but not a vowel,
+// report “Consonant”. Any non-alphabet character should be reported as invalid
+// #include<stdio.h>
+// int main(){
+//     char character;
+//     printf("Enter the character : ");
+//     scanf("%c", &character);
+//     switch(character){
+//         case 'a':
+//         printf("Vowel\n");
+//         break;
+//             case 'e':
+//         printf("Vowel\n");
+//         break;
+//             case 'i':
+//         printf("Vowel\n");
+//         break;
+//             case 'o':
+//         printf("Vowel\n");
+//         break;
+//             case 'u':
+//         printf("Vowel\n");
+//         break;
+//         case 'A':
+//         printf("Vowel\n");
+//         break;
+//             case 'E':
+//         printf("Vowel\n");
+//         break;
+//             case 'I':
+//         printf("Vowel\n");
+//         break;
+//             case 'O':
+//         printf("Vowel\n");
+//         break;
+//             case 'U':
+//         printf("Vowel\n");
+//         break;
+//     default:
+//     printf("Consonant\n");
+//     break;
+//     }
+// }
+
+//-- shorter way 
+// #include<stdio.h>
+// int main(){
+// char character;
+// printf("Enter the character ");
+// scanf("%c", &character);
+// switch (character)
+// {
+// case 'a': case 'e': case 'i': case 'o': case 'u':
+// case 'A':case 'E':case 'I':case 'O':case 'U':
+//     printf("Vowel\n");
+//     break;
+// default:
+//     printf("Consonant\n");
+//     break;
+// }
+// }
+
+// // 4. SMART TRAFFIC SIGNAL 
+// The system receives a traffic signal character: R means Stop, Y means Wait, and G means Go.
+// Lowercase versions should also be accepted. Any other character is invalid
+// #include<stdio.h>
+// int main(){
+//     char character;
+//     printf("Enter the character : ");
+//     scanf("%c", &character);
+//     switch (character)
+//     {
+//     case 'R': case 'r':
+//     printf("Stop");
+//         break;
+//     case 'Y': case 'y':
+//     printf("Wait");
+//         break;
+//     case 'G': case 'g':
+//     printf("Go");
+//         break;
+//     default:
+//     printf("Invalid!");
+//         break;
+//     }
+// }
+
+// 5 THE ARCHITECTS SHAPE CALCULATOR
+// The application first asks which shape’s area is required: Circle, Rectangle, Square, or 
+// Right-Angle Triangle. After the shape is selected, only the dimensions needed for that shape should
+// be requested
+
+// #include<stdio.h>
+// #include<math.h>
+// int main(){
+//     double area, rad_2, radius, length, side, breadth, base, height;
+//     char shape;
+//     printf("Enter the the shape : ");
+//     scanf("%c", &shape);
+//     switch(shape){
+//         case 'C':
+//         case 'c':
+//             printf("Enter teh radius of circle : ");
+//             scanf("%lf", &radius);
+//             rad_2 = pow(radius, 2);
+//             area = 3.14 * rad_2;
+//             printf("area = %.2lf\n", area);
+//             break;
+//         case 'R':
+//         case 'r':
+//             printf("Enter teh length of rectangle : ");
+//             scanf("%lf", &length);
+//             printf("Enter teh breadth of rectangle : ");
+//             scanf("%lf", &breadth);
+//             area = length * breadth;
+//             printf("area = %.2lf\n", area);
+//             break;
+//         case 's':
+//         case 'S':
+//             printf("Enter the side of square : ");
+//             scanf("%lf", &side);
+//             area = ("area = %.2lf\n", area);
+//             break;
+//         case 'T':
+//         case 't':
+//             printf("Enter the base of triangle : ");
+//             scanf("%lf", &base);
+//             printf("Enter the height of triangle : ");
+//             scanf("%lf", &height);
+//             area = 0.5 * base * height;
+//             printf("area = %.2lf\n", area);
+//             break;
+//         default:
+//         printf("INVALID SHAPE!");
+//         break;
+//     }
+
+// }
+
+// // 6. THE UNIT CONVERSION DESK
+// A student chooses one conversion: Celsius → Fahrenheit, Fahrenheit → Celsius, Kilometers → Meters,
+// or Meters → Kilometers. The program then accepts the value and displays the converted result.
+// #include<stdio.h>
+// int main(){
+//     int choice;
+//     double value;
+//     printf("choose the conversion :\n");
+//     printf("1. Celsius → Fahrenheit\n");
+//     printf("2. Fahrenheit → Celsius\n");
+//     printf("3. Kilometers → Meters\n");
+//     printf("4. Meters → Kilometers\n");
+//     printf("Enter choice from (1-4) :\n");
+//     scanf("%d", &choice);
+//     if(choice<1 || choice>4){
+//         printf("Invalid choice!");
+//         return 0;
+//     }
+
+//     printf("Enter the value : ");
+//     scanf("%lf", &value);
+
+//     switch(choice){
+//         case 1:
+//         printf("%.2lf *C = %.2lf *F\n", value, (value * 9.0/5.0)+32.0);
+//         break;
+//         case 2:
+//         printf("%.2lf *F = %.2lf *C\n", value, (value-32.0)*5.0/9.0);
+//         break;
+//         case 3:
+//         printf("%.2lf km = %.2lf m\n", value, value * 1000.0);
+//         break;
+//         case 4:
+//         printf("%.2lf m = %.4lf km\n", value, value / 1000.0);
+//         break;
+//     }
+//     return 0;
+// }
+
+// //7. THE ENGINEERING MEASUREMENT ASSISTANT
+// First ask what the student wants to calculate: Area or Volume. If Area is selected, offer Rectangle, Circle,
+// or Right-Angle Triangle. If Volume is selected, offer Cone, Cuboid, or Sphere. Then ask only for the
+// dimensions required by the chosen shape/solid.
+#include<stdio.h>
+#include<math.h>
+int main(){
+    double area, volume, radius, rad_2, length, breadth, base, height ;
+    char choice; int shape;
+    printf("enter what you want to calculate : ");
+    scanf("%c", &choice);
+    switch(choice){
+        case 'A':
+        case 'a':
+        printf("Enter your choice\n");
+        printf("1. Rectangle\n");
+        printf("2. Circle\n");
+        printf("3. Right angled triangle");
+        printf("Enter choice from (1-3) :\n");
+        scanf("%d", &shape);
+        if(shape<1 || shape>3){
+        printf("Invalid choice!");
+        return 0;
+        }
+            switch(shape){
+                case 1:
+                printf("Enter the length of rectangle : ");
+                scanf("%lf", &length);
+                printf("Enter teh breadth of rectangle : ");
+                scanf("%lf", &breadth);
+                area = length * breadth;
+                printf("area = %.2lf\n", area);
+                break;
+
+                case 2:
+                printf("Enter the radius of circle : ");
+                scanf("%lf", &radius);
+                rad_2 = pow(radius, 2);
+                area = 3.14 * rad_2;
+                printf("area = %.2lf\n", area);
+                break;
+
+                case 3:
+                printf("Enter the base of triangle : ");
+                scanf("%lf", &base);
+                printf("Enter the height of triangle : ");
+                scanf("%lf", &height);
+                area = 0.5 * base * height;
+                printf("area = %.2lf\n", area);
+                break;
+        break;
+            }
+        case 'V':
+        case 'v':
+        printf("Enter your choice\n");
+        printf("1. Cone\n");
+        printf("2. Cuboid\n");
+        printf("3. Sphere");
+        printf("Enter choice from (1-3) :\n");
+        scanf("%d", &shape);
+
+        if(shape<1 || shape>3){
+        printf("Invalid choice!");
+        return 0;
+    }
+        switch(shape){
+            case 1:
+            printf("Enter the radius of cone : ");
+            scanf("%lf", &radius);
+            printf("Enter the height of cone : ");
+            scanf("%lf", &height);
+            rad_2 = pow(radius, 2);
+            volume = 0.33 * 3.14* rad_2 * height;
+            printf("volume of cone = %.2lf\n", volume);
+            break;
+
+            case 2:
+            printf("Enter the length  cuboid : ");
+            scanf("%lf", &length);
+            printf("Enter the breadth of cuboid : ");
+            scanf("%lf", &breadth);
+            printf("Enter the breadth of cuboid : ");
+            scanf("%lf", &height);
+            volume = length * breadth * height;
+            printf("volume of cuboid = %.2lf\n", volume);
+            break;
+
+            case 3:
+            printf("Enter the radius of sphere : ");
+            scanf("%lf", &radius);
+            rad_2 = pow(radius, 3);
+            volume = 1.33 * 3.14 *rad_2;
+            printf("volume of cone = %.2lf\n", volume);
+            break;
+        }
+        break;
+    default:
+        printf("Invalid!");
+        break;
+}
+}

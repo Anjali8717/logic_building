@@ -279,29 +279,133 @@
 #     print("Not eligible for voting")
 
 # #29. HIGHEST OF FOUR TEAMS 
-a = int(input("Enter score of team a : "))
-b = int(input("Enter score of team b : "))
-c = int(input("Enter score of team c : "))
-d = int(input("Enter score of team d : "))
-if(a>b):
-    if(a>c):
-        if(a>d):
-            print("Team a scores highest")
-        else:
-            print("Team d scores highest")
-    else:
-        if(c>d):
-            print("Team c scores highest")
-        else:
-            print("Team d scores the highest")
+# a = int(input("Enter score of team a : "))
+# b = int(input("Enter score of team b : "))
+# c = int(input("Enter score of team c : "))
+# d = int(input("Enter score of team d : "))
+# if(a>b):
+#     if(a>c):
+#         if(a>d):
+#             print("Team a scores highest")
+#         else:
+#             print("Team d scores highest")
+#     else:
+#         if(c>d):
+#             print("Team c scores highest")
+#         else:
+#             print("Team d scores the highest")
+# else:
+#     if(b>c):
+#         if(b>d):
+    #         print("Team b scores the highest")
+    #     else:
+    #         print("Team d scores the highest")
+    # else:
+    #     if(c>d):
+    #         print("Team c scores the highest")
+    #     else:
+    #         print("Team d scores the highest")
+
+# #30 TRIANGLE TYPE 
+# side1 = int(input("Enter the side of triangle 1 : "))
+# side2 = int(input("Enter the side of triangle 2 : "))
+# side3 = int(input("Enter the side of triangle 3 : "))
+# if(side1 == side2):
+#     if(side2==side3):
+#         print("Equilateral triangle")
+#     else:
+#         print("Isosceles triangle")
+# else:
+#     print("Scalene")
+
+# #31 Electricity bill
+# units = int(input("Enter the units : "))
+# if(units <= 100):
+#     total_bill = units * 1.5
+# elif(units <= 200):
+#     total_bill = units * 2.5
+# else:
+#     total_bill = units * 4
+
+# print(f"Total bill is {total_bill}")
+
+# #32. CHARACTER CLASSIFIER 
+
+# character = input("Enter the character = ")
+# if(character.isdigit()):
+#     print("Digit")
+# elif(character.islower()):
+#     print("Lowercase")
+# elif(character.isupper()):
+#     print("Uppercase")
+# else:
+#     print("Special symbol")
+
+# # 33. CASE CONVERTER 
+# char = input("Enter the character : ")
+# if('A' <= char <= 'Z'):
+#     print(chr(ord(char)+ 32))
+# elif('a' <= char <= 'z'):
+#         print(chr(ord(char) - 32))
+# else:
+#     print(char)
+
+################################# SET 3 ######################################################
+## 1. THE WEEKLY PLANNER 
+# day = input("Enter the number : ")
+
+# try:
+#     number = int(day)
+#     match number:
+#         case 1:
+#             print("Monday")
+#         case 2:
+#             print("Tuesday")
+#         case 3:
+#             print("Wednesday")
+#         case 4:
+#             print("Thursday")
+#         case 5:
+#             print("Friday")
+#         case 6:
+#             print("Saturday")
+#         case 7:
+#             print("Sunday")
+#         case _:
+#             print("out of range")
+# except ValueError:
+#     print("Invalid")
+
+
+## 2. THE POCKET CALCULATOR 
+# a = int(input("Enter the value of a : "))
+# op = input("Enter the operator : ")
+# b = int(input("Enter the value of b : "))
+
+# match op:
+#     case '+':
+#         print(a + b)
+#     case '-':
+#         print(a -  b)
+#     case '/':
+#         print(a/b)
+#     case '*':
+#         print(a * b)
+#     case '%':
+#         print(a % b)
+#     case _:
+#         print("Invalid operation")
+
+
+##3. THE ENGLISH LEARNING ASSISTANT
+# The program receives one character. If it is a vowel, report “Vowel”. If it is an alphabet but not a 
+# vowel, report “Consonant”. Any non-alphabet character should be reported as invalid
+char = input("Enter the character : ")
+if len(char) !=1 or not char.isalpha():
+    print("Invalid!")
 else:
-    if(b>c):
-        if(b>d):
-            print("Team b scores the highest")
-        else:
-            print("Team d scores the highest")
-    else:
-        if(c>d):
-            print("Team c scores the highest")
-        else:
-            print("Team d scores the highest")
+    match char:
+        case 'a'|'e'|'i'|'o'|'u'|'A'|'E'|'I'|'O'|'U':
+            print("Vowel")
+        case _:
+            print("Consonant")
