@@ -685,9 +685,403 @@ the student. Your task is to write a code  to perform these calculations. */
 // The program receives one character. If it is a vowel, report “Vowel”. If it is an alphabet but not a 
 // vowel, report “Consonant”. Any non-alphabet character should be reported as invalid
 
-#include<iostream>
-using namespace std;
-int main(){
-    char ch;
+// #include<iostream>
+// using namespace std;
+//     int main(){
+//     char character;
+//     cout<<"Enter the character : ";
+//     cin>>character;
+//     switch(character)
+//     {
+//     case 'a': case 'e': case 'i': case 'o': case 'u':
+//     case 'A':case 'E':case 'I':case 'O':case 'U':
+//         cout<<"Vowel\n";
+//         break;
+//     default:
+//     if((character >= 'a' && character <= 'z') || (character >= 'A' && character <= 'Z')){
+//        cout<<"Consonant\n";
+//     }else{
+//         cout<<"Invalid!!";
+//     }   
+//         break;
+//     }
+// }
+
+// // 4. SMART TRAFFIC SIGNAL 
+// The system receives a traffic signal character: R means Stop, Y means Wait, and G means Go.
+// Lowercase versions should also be accepted. Any other character is invalid
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     char character;
+//     cout<<"Enter the character : ";
+//     cin>>character;
+//     switch (character)
+//     {
+//     case 'R': case 'r':
+//     cout<<"Stop";
+//         break;
+//     case 'Y': case 'y':
+//     cout<<"Wait";
+//         break;
+//     case 'G': case 'g':
+//     cout<<"Go";
+//         break;
+//     default:
+//     cout<<"Invalid!";
+//         break;
+//     }
+// }
+
+// // 5. THE ARCHITECTS SHAPE CALCULATOR
+// The application first asks which shape’s area is required: Circle, Rectangle, Square, or Right-Angle
+// Triangle. After the shape is selected, only the dimensions needed for that shape should be requested.
+// #include<iostream>
+// #include<math.h>
+// using namespace std;
+// int main(){
+//     double area, rad_2, radius, length, side, breadth, base, height;
+//     char shape;
+//     cout<<"Enter the shape : ";
+//     cin>>shape;
+//     switch(shape){
+//         case 'C':
+//         case 'c':
+//             cout<<"Shape selected is circle \n";
+//             cout<<"Enter the radius of circle : ";
+//             cin>>radius;
+//             rad_2 = pow(radius, 2);
+//             area = 3.14 * rad_2;
+//             cout<<"Area = "<<area;
+//             break;
+//         case 'R':
+//         case 'r':
+//             cout<<"Shape selected is rectangle \n";
+//             cout<<"Enter teh length of rectangle : ";
+//             cin>>length;
+//             cout<<"Enter teh breadth of rectangle : ";
+//             cin>>breadth;
+//             area = length * breadth;
+//             cout<<"area = "<<area;
+//             break;
+//         case 's':
+//         case 'S':
+//             cout<<"Shape selected is square \n";
+//             cout<<"Enter the side of square : ";
+//             cin>>side;
+//             area = side * side;
+//             cout<<"area ="<<area;
+//             break;
+//         case 'T':
+//         case 't':
+//             cout<<"Shape selected is triangle \n";
+//             cout<<"Enter the base of triangle : ";
+//             cin>>base;
+//             cout<<"Enter the height of triangle : ";
+//             cin>>height;
+//             area = 0.5 * base * height;
+//             cout<<"Area = "<<area;
+//             break;
+//         default:
+//         cout<<"INVALID SHAPE!";
+//         break;
+//     }
+// }
+
+// // 6. THE UNIT CONVERSION DESK
+// A student chooses one conversion: Celsius -> Fahrenheit, Fahrenheit -> Celsius, Kilometers -> Meters,
+// or Meters -> Kilometers. The program then accepts the value and displays the converted result
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int choice;
+//     double value;
+//     cout<<"choose the conversion :\n";
+//     cout<<"1. Celsius -> Fahrenheit\n";
+//     cout<<"2. Fahrenheit -> Celsius\n";
+//     cout<<"3. Kilometers -> Meters\n";
+//     cout<<"4. Meters -> Kilometers\n";
+//     cout<<"Enter choice from (1-4) :\n";
+//     cin>>choice;
+//     if(choice<1 || choice>4){
+//         cout<<"Invalid choice!";
+//         return 0;
+//     }
+
+//     cout<<"Enter the value : ";
+//     cin>>value;
+
+//     switch(choice){
+//         case 1:
+//         cout<<value<<"*c = "<<(value * 9.0/5.0)+32.0<<"*F";
+//         break;
+//         case 2:
+//         cout<<value<<"*F = "<<(value-32.0)*5.0/9.0<<"*c";
+//         break;
+//         case 3:
+//         cout<<value<<" km ="<< value * 1000.0<<"m";
+//         break;
+//         case 4:
+//         cout<<value<<" m = "<<value / 1000.0<<"km";
+//         break;
+//     }
+//     return 0;
+// }
+
+// //7. THE ENGINEERING MEASUREMENT ASSISTANT
+// First ask what the student wants to calculate: Area or Volume. If Area is selected, offer Rectangle, Circle,
+// or Right-Angle Triangle. If Volume is selected, offer Cone, Cuboid, or Sphere. Then ask only for the
+// dimensions required by the chosen shape/solid.
+// #include<iostream>
+// #include<math.h>
+// using namespace std;
+// int main(){
+//     double area, volume, radius, rad_2, length, breadth, base, height ;
+//     char choice; int shape;
+//     cout<<"Enter what you want to calculate : \n";
+//     cout<<"area (A) \nvolume(V)\n";
+//     cin>>choice;
+//     switch(choice){
+//         case 'A':
+//         case 'a':
+//         cout<<"Enter your choice\n";
+//         cout<<"1. Rectangle\n";
+//         cout<<"2. Circle\n";
+//         cout<<"3. Right angled triangle\n";
+//         cout<<"Enter choice from (1-3) :\n";
+//         cin>>shape;
+//         if(shape<1 || shape>3){
+//         cout<<"Invalid choice!";
+//         return 0;
+//         }
+//             switch(shape){
+//                 case 1:
+//                 cout<<"Enter the length of rectangle : ";
+//                 cin>>length;
+//                 cout<<"Enter teh breadth of rectangle : ";
+//                 cin>>breadth;
+//                 area = length * breadth;
+//                 cout<<"area =" <<area;
+//                 break;
+
+//                 case 2:
+//                 cout<<"Enter the radius of circle : ";
+//                 cin>>radius;
+//                 rad_2 = pow(radius, 2);
+//                 area = 3.14 * rad_2;
+//                 cout<<"area = "<<area;
+//                 break;
+
+//                 case 3:
+//                 cout<<"Enter the base of triangle : ";
+//                 cin>>base;
+//                 cout<<"Enter the height of triangle : ";
+//                 cin>>height;
+//                 area = 0.5 * base * height;
+//                 cout<<"area = "<<area;
+//                 break;
+//             }
+//             break;
+//         case 'V':
+//         case 'v':
+//         cout<<"Enter your choice\n";
+//         cout<<"1. Cone\n";
+//         cout<<"2. Cuboid\n";
+//         cout<<"3. Sphere\n";
+//         cout<<"Enter choice from (1-3) :\n";
+//         cin>>shape;
+
+//         if(shape<1 || shape>3){
+//         cout<<"Invalid choice!";
+//         return 0;
+//     }
+//         switch(shape){
+//             case 1:
+//             cout<<"Enter the radius of cone : ";
+//             cin>>radius;
+//             cout<<"Enter the height of cone : ";
+//             cin>>height;
+//             rad_2 = pow(radius, 2);
+//             volume = 0.33 * 3.14* rad_2 * height;
+//             cout<<"volume of cone ="<<volume;
+//             break;
+
+//             case 2:
+//             cout<<"Enter the length  cuboid : ";
+//             cin>>length;
+//             cout<<"Enter the breadth of cuboid : ";
+//             cin>>breadth;
+//             cout<<"Enter the height of cuboid : ";
+//             cin>>height;
+//             volume = length * breadth * height;
+//             cout<<"volume of cuboid = "<<volume;
+//             break;
+
+//             case 3:
+//             cout<<"Enter the radius of sphere : ";
+//             cin>>radius;
+//             rad_2 = pow(radius, 3);
+//             volume = 1.33 * 3.14 *rad_2;
+//             cout<<"volume of cone = "<<volume;
+//             break;
+//         }
+//         break;
+//     default:
+//         cout<<"Invalid!";
+//         break;
+// }
+// }
+
+// // ---------- SET 4 ------------
+// // 1. THE SENSOR MONITORING SYSTEM + 2. THE ATTENDANCE COUNTER + 3
+// #include<iostream>
+// #include<conio.h>
+// using namespace std;
+// int main(){
+//     int a;
+//     int num = 0;
+//     int sum = 0;
+//     XYZ:
+//     cout<<"Enter the number : ";
+//     cin>>a;
+//     cout<<"Your number is = "<<a<<endl;
+
+//     if(a == 0){
+//         goto ABC;
+//     }
+//     else num +=1, sum+=a;
+//     goto XYZ;
+
+//     ABC:
+//     cout<<"Bye-bye";
+//     cout<<"total numbers ="<<num<<endl;
+//     cout<<"total production = "<<sum<<endl;
+// getch();
+// return 0;
+// }
+
+// // 4. THE QUALITY ANALYSIS SYSTEM
+// #include<iostream>
+// #include<conio.h>
+// using namespace std;
+// int main(){
+//     int a;
+//     int even_count = 0;
+//     int odd_count = 0; 
+//     int even_sum = 0;
+//     int odd_sum = 0;
+//     XYZ:
+//     cout<<"Enter the number : ";
+//     cin>>a;
+//     cout<<"Your number is = "<<a<<endl;
+
+//     if(a == 0){
+//         goto ABC;
+//     }
+//     else{
+//         if(a % 2 == 0){
+//             even_count +=1;
+//             even_sum +=a;
+//         }else{
+//             odd_count +=1;
+//             odd_sum +=a;
+//         }
+//     goto XYZ;
+//     }
+
+//     ABC:
+//     cout<<"Bye-bye\n";
+//     cout<<"Even count = "<<even_count<<endl;
+//     cout<<"Odd count = "<<odd_count<<endl;
+//     cout<<"Even sum = "<<even_sum<<endl;
+//     cout<<"Odd sum = "<<odd_sum<<endl;
+
+// getch();
+// return 0;
+// }
+
+// // 5.THE NUMBER GUESSING GAME
+// #include<iostream>
+// #include<stdlib.h>
+// #include<time.h>
+// using namespace std;
+// int main(){
+//     srand(time(NULL));
+//     int random_num = rand() % 100;
+//     int guess;
+
+//     XYZ:
+//     cout<<"Enter the number : ";
+//     cin>>guess;
+//     if(random_num != guess){
+//         if(random_num > guess){
+//             cout<<"Try higher\n";
+//         }
+//         if(random_num < guess){
+//             cout<<"Try lower\n";
+//         }
+//         goto XYZ;
+//     }else{
+//         goto ABC;
+//     }
     
-}
+//     ABC:
+//     cout<<"Correct ;)";
+// }
+
+
+// //6. SECRET VAULT PASSWORD 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     const int secret_password = 1234;
+//     int user_input;
+//     int failed_attempts = 0;
+
+//     TRY_AGAIN:
+//     cout<<"Enter the password : ";
+//     cin>>user_input;
+//     if(user_input == secret_password){
+//         cout<<"Vault opened";
+//     }else{
+//         cout<<"Wrong password!\n";
+//         failed_attempts++;
+//         if(failed_attempts == 3){
+//             cout<<"Access denied\n";
+//             return 0;
+//         }
+//         goto TRY_AGAIN;
+//     }
+//     return 0;
+// }
+
+// //7. TARGET NUMBER CHALLENGE
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int secret_num = 10;
+//     int guess;
+//     int failed_attempts = 0;
+//     XYZ:
+//     cout<<"Enter the number : ";
+//     cin>>guess;
+//     if(secret_num == guess){
+//         goto ABC;
+//     }else{
+//         if(secret_num > guess){
+//             cout<<"Target is higher\n";
+//         }
+//         if(secret_num < guess){
+//             cout<<"Target is lower\n";
+//         }
+//         failed_attempts ++;
+//         if(failed_attempts == 5){
+//             cout<<"Target missed!";
+//             return 0;
+//         }
+//         goto XYZ;
+//     }
+    
+//     ABC:
+//     cout<<"Target hit ;)";
+// }

@@ -709,7 +709,11 @@ the student. Your task is to write a code  to perform these calculations. */
 //     printf("Vowel\n");
 //     break;
 // default:
-//     printf("Consonant\n");
+//     if((character >= 'a' && character <= 'z') || (character >= 'A' && character <= 'Z')){
+//        printf("Consonant\n");
+//     }else{
+//         printf("Invalid!!");
+//     }   
 //     break;
 // }
 // }
@@ -754,7 +758,8 @@ the student. Your task is to write a code  to perform these calculations. */
 //     switch(shape){
 //         case 'C':
 //         case 'c':
-//             printf("Enter teh radius of circle : ");
+//             printf("Shape selected is circle \n");
+//             printf("Enter the radius of circle : ");
 //             scanf("%lf", &radius);
 //             rad_2 = pow(radius, 2);
 //             area = 3.14 * rad_2;
@@ -762,6 +767,7 @@ the student. Your task is to write a code  to perform these calculations. */
 //             break;
 //         case 'R':
 //         case 'r':
+//             printf("Shape selected is rectangle \n");
 //             printf("Enter teh length of rectangle : ");
 //             scanf("%lf", &length);
 //             printf("Enter teh breadth of rectangle : ");
@@ -771,12 +777,14 @@ the student. Your task is to write a code  to perform these calculations. */
 //             break;
 //         case 's':
 //         case 'S':
+//             printf("Shape selected is square \n");
 //             printf("Enter the side of square : ");
 //             scanf("%lf", &side);
 //             area = ("area = %.2lf\n", area);
 //             break;
 //         case 'T':
 //         case 't':
+//             printf("Shape selected is triangle \n");
 //             printf("Enter the base of triangle : ");
 //             scanf("%lf", &base);
 //             printf("Enter the height of triangle : ");
@@ -788,7 +796,6 @@ the student. Your task is to write a code  to perform these calculations. */
 //         printf("INVALID SHAPE!");
 //         break;
 //     }
-
 // }
 
 // // 6. THE UNIT CONVERSION DESK
@@ -834,100 +841,242 @@ the student. Your task is to write a code  to perform these calculations. */
 // First ask what the student wants to calculate: Area or Volume. If Area is selected, offer Rectangle, Circle,
 // or Right-Angle Triangle. If Volume is selected, offer Cone, Cuboid, or Sphere. Then ask only for the
 // dimensions required by the chosen shape/solid.
+// #include<stdio.h>
+// #include<math.h>
+// int main(){
+//     double area, volume, radius, rad_2, length, breadth, base, height ;
+//     char choice; int shape;
+//     printf("enter what you want to calculate : ");
+//     scanf("%c", &choice);
+//     switch(choice){
+//         case 'A':
+//         case 'a':
+//         printf("Enter your choice\n");
+//         printf("1. Rectangle\n");
+//         printf("2. Circle\n");
+//         printf("3. Right angled triangle\n");
+//         printf("Enter choice from (1-3) :\n");
+//         scanf("%d", &shape);
+//         if(shape<1 || shape>3){
+//         printf("Invalid choice!");
+//         return 0;
+//         }
+            // switch(shape){
+            //     case 1:
+            //     printf("Enter the length of rectangle : ");
+            //     scanf("%lf", &length);
+            //     printf("Enter teh breadth of rectangle : ");
+            //     scanf("%lf", &breadth);
+            //     area = length * breadth;
+            //     printf("area = %.2lf\n", area);
+            //     break;
+
+            //     case 2:
+            //     printf("Enter the radius of circle : ");
+            //     scanf("%lf", &radius);
+            //     rad_2 = pow(radius, 2);
+            //     area = 3.14 * rad_2;
+            //     printf("area = %.2lf\n", area);
+            //     break;
+
+            //     case 3:
+            //     printf("Enter the base of triangle : ");
+    //             scanf("%lf", &base);
+    //             printf("Enter the height of triangle : ");
+    //             scanf("%lf", &height);
+    //             area = 0.5 * base * height;
+    //             printf("area = %.2lf\n", area);
+    //             break;
+    //         }
+    //         break;
+    //     case 'V':
+    //     case 'v':
+    //     printf("Enter your choice\n");
+    //     printf("1. Cone\n");
+    //     printf("2. Cuboid\n");
+    //     printf("3. Sphere\n");
+    //     printf("Enter choice from (1-3) :\n");
+    //     scanf("%d", &shape);
+
+    //     if(shape<1 || shape>3){
+    //     printf("Invalid choice!");
+    //     return 0;
+    // }
+        // switch(shape){
+        //     case 1:
+        //     printf("Enter the radius of cone : ");
+        //     scanf("%lf", &radius);
+        //     printf("Enter the height of cone : ");
+        //     scanf("%lf", &height);
+        //     rad_2 = pow(radius, 2);
+        //     volume = 0.33 * 3.14* rad_2 * height;
+        //     printf("volume of cone = %.2lf\n", volume);
+        //     break;
+
+        //     case 2:
+        //     printf("Enter the length  cuboid : ");
+        //     scanf("%lf", &length);
+        //     printf("Enter the breadth of cuboid : ");
+        //     scanf("%lf", &breadth);
+        //     printf("Enter the breadth of cuboid : ");
+        //     scanf("%lf", &height);
+    //         volume = length * breadth * height;
+    //         printf("volume of cuboid = %.2lf\n", volume);
+    //         break;
+
+    //         case 3:
+    //         printf("Enter the radius of sphere : ");
+    //         scanf("%lf", &radius);
+    //         rad_2 = pow(radius, 3);
+    //         volume = 1.33 * 3.14 *rad_2;
+    //         printf("volume of cone = %.2lf\n", volume);
+    //         break;
+//         }
+//         break;
+//     default:
+//         printf("Invalid!");
+//         break;
+// }
+// }
+
+// // ---------- SET 4 ------------
+// // 1. THE SENSOR MONITORING SYSTEM + 2. THE ATTENDANCE COUNTER +3
+// #include<stdio.h>
+// #include<conio.h>
+// void main(){
+//     int a;
+//     int num = 0;
+//     int sum = 0;
+//     XYZ:
+//     printf("Enter the number : ");
+//     scanf("%d", &a);
+//     printf("Your number is = %d\n", a);
+//     sum += a;
+//     if(a == 0){
+//         goto ABC;
+//     }
+//     else num+=1;
+//     goto XYZ;
+//     ABC:
+//     printf("Bye-bye\n");
+//     printf("number = %d\n", num);
+//     printf("Total production = %d", sum);
+// getch();
+// }
+
+// // 4. THE QUALITY ANALYSIS SYSTEM
+// #include<stdio.h>
+// #include<conio.h>
+// void main(){
+//     int a;
+//     int even_count = 0;
+//     int odd_count = 0; 
+//     int even_sum = 0;
+//     int odd_sum = 0;
+//     XYZ:
+//     printf("Enter the number : ");
+//     scanf("%d", &a);
+//     printf("Your number is = %d\n", a);
+//     if(a == 0){
+//         goto ABC;
+//     }
+//     else{
+//         if(a % 2 == 0){
+//             even_count +=1;
+//             even_sum +=a;
+//         }else{
+//             odd_count +=1;
+//             odd_sum +=a;
+//         }
+//         goto XYZ;
+//     }
+//     ABC:
+//     printf("Bye-bye\n");
+//     printf("Even count = %d\n", even_count);
+//     printf("Odd count = %d\n", odd_count);
+//     printf("Even sum = %d\n", even_sum);
+//     printf("Odd sum = %d\n", odd_sum);
+// getch();
+// }
+
+// // 5. THE NUMBER GUESSING GAME
+// #include<stdio.h>
+// #include<stdlib.h>
+// #include<time.h>
+// int main(){
+//     srand(time(NULL));
+//     int secret_num = rand() % 100;
+//     int guess;
+
+//     XYZ:
+//     printf("Enter the number : ");
+//     scanf("%d", &guess);
+//     if(secret_num != guess){
+//         if(secret_num > guess){
+//             printf("Try higher\n");
+//         }
+//         if(secret_num < guess){
+//             printf("Try lower\n");
+//         }
+//         goto XYZ;
+//     }else{
+//         goto ABC;
+//     }
+    
+//     ABC:
+//     printf("Correct ;)");
+// }
+
+// //6. SECRET VAULT PASSWORD 
+// #include<stdio.h>
+// int main(){
+//     const int secret_password = 1234;
+//     int user_input;
+//     int failed_attempts = 0;
+
+//     TRY_AGAIN:
+//     printf("Enter the password : ");
+//     scanf("%d", &user_input);
+//     if(user_input == secret_password){
+//         printf("Vault opened");
+//     }else{
+//         printf("Wrong password!\n");
+//         failed_attempts++;
+//         if(failed_attempts == 3){
+//             printf("Access denied\n");
+//             return 0;
+//         }
+//         goto TRY_AGAIN;
+//     }
+//     return 0;
+// }
+
+// //7. TARGET NUMBER CHALLENGE
 #include<stdio.h>
-#include<math.h>
 int main(){
-    double area, volume, radius, rad_2, length, breadth, base, height ;
-    char choice; int shape;
-    printf("enter what you want to calculate : ");
-    scanf("%c", &choice);
-    switch(choice){
-        case 'A':
-        case 'a':
-        printf("Enter your choice\n");
-        printf("1. Rectangle\n");
-        printf("2. Circle\n");
-        printf("3. Right angled triangle");
-        printf("Enter choice from (1-3) :\n");
-        scanf("%d", &shape);
-        if(shape<1 || shape>3){
-        printf("Invalid choice!");
-        return 0;
+    int secret_num = 10;
+    int guess;
+    int failed_attempts = 0;
+    XYZ:
+    printf("Enter the number : ");
+    scanf("%d", &guess);
+    if(secret_num == guess){
+        goto ABC;
+    }else{
+        if(secret_num > guess){
+            printf("Target is higher\n");
         }
-            switch(shape){
-                case 1:
-                printf("Enter the length of rectangle : ");
-                scanf("%lf", &length);
-                printf("Enter teh breadth of rectangle : ");
-                scanf("%lf", &breadth);
-                area = length * breadth;
-                printf("area = %.2lf\n", area);
-                break;
-
-                case 2:
-                printf("Enter the radius of circle : ");
-                scanf("%lf", &radius);
-                rad_2 = pow(radius, 2);
-                area = 3.14 * rad_2;
-                printf("area = %.2lf\n", area);
-                break;
-
-                case 3:
-                printf("Enter the base of triangle : ");
-                scanf("%lf", &base);
-                printf("Enter the height of triangle : ");
-                scanf("%lf", &height);
-                area = 0.5 * base * height;
-                printf("area = %.2lf\n", area);
-                break;
-        break;
-            }
-        case 'V':
-        case 'v':
-        printf("Enter your choice\n");
-        printf("1. Cone\n");
-        printf("2. Cuboid\n");
-        printf("3. Sphere");
-        printf("Enter choice from (1-3) :\n");
-        scanf("%d", &shape);
-
-        if(shape<1 || shape>3){
-        printf("Invalid choice!");
-        return 0;
+        if(secret_num < guess){
+            printf("Target is lower\n");
+        }
+        failed_attempts ++;
+        if(failed_attempts == 5){
+            printf("Target missed!");
+            return 0;
+        }
+        goto XYZ;
     }
-        switch(shape){
-            case 1:
-            printf("Enter the radius of cone : ");
-            scanf("%lf", &radius);
-            printf("Enter the height of cone : ");
-            scanf("%lf", &height);
-            rad_2 = pow(radius, 2);
-            volume = 0.33 * 3.14* rad_2 * height;
-            printf("volume of cone = %.2lf\n", volume);
-            break;
-
-            case 2:
-            printf("Enter the length  cuboid : ");
-            scanf("%lf", &length);
-            printf("Enter the breadth of cuboid : ");
-            scanf("%lf", &breadth);
-            printf("Enter the breadth of cuboid : ");
-            scanf("%lf", &height);
-            volume = length * breadth * height;
-            printf("volume of cuboid = %.2lf\n", volume);
-            break;
-
-            case 3:
-            printf("Enter the radius of sphere : ");
-            scanf("%lf", &radius);
-            rad_2 = pow(radius, 3);
-            volume = 1.33 * 3.14 *rad_2;
-            printf("volume of cone = %.2lf\n", volume);
-            break;
-        }
-        break;
-    default:
-        printf("Invalid!");
-        break;
-}
+    
+    ABC:
+    printf("Target hit ;)");
 }

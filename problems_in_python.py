@@ -400,12 +400,240 @@
 ##3. THE ENGLISH LEARNING ASSISTANT
 # The program receives one character. If it is a vowel, report “Vowel”. If it is an alphabet but not a 
 # vowel, report “Consonant”. Any non-alphabet character should be reported as invalid
-char = input("Enter the character : ")
-if len(char) !=1 or not char.isalpha():
-    print("Invalid!")
-else:
-    match char:
-        case 'a'|'e'|'i'|'o'|'u'|'A'|'E'|'I'|'O'|'U':
-            print("Vowel")
-        case _:
-            print("Consonant")
+# char = input("Enter the character : ")
+# if len(char) !=1 or not char.isalpha():
+#     print("Invalid!")
+# else:
+#     match char:
+#         case 'a'|'e'|'i'|'o'|'u'|'A'|'E'|'I'|'O'|'U':
+#             print("Vowel")
+#         case _:
+#             print("Consonant")
+
+## 4. SMART TRAFFIC SIGNAL 
+# The system receives a traffic signal character: R means Stop, Y means Wait, and G means Go.
+# Lowercase versions should also be accepted. Any other character is invalid
+# signal = input("Enter the signal : ")
+# match signal:
+#     case 'R'|'r':
+#         print("R -> Stop")
+#     case 'Y'|'y':
+#         print(" Y -> Wait")
+#     case 'G'|'g':
+#         print("G -> Go")
+#     case _:
+#         print("Invalid!!")
+
+##5. THE ARCHITECTS SHAPE CALCULATOR 
+# The application first asks which shape’s area is required: Circle, Rectangle, Square, or Right-Angle
+# Triangle. After the shape is selected, only the dimensions needed for that shape should be requested
+# shape = input("Enter the shape whose area to be calculated :")
+# print("Shape selected = ", shape)
+# match shape:
+#     case 'Circle'|'circle'|'CIRCLE':
+#         radius = int(input("Enter the radius of circle :  "))
+#         area = 3.14 * radius**2
+#         print("area = ", area)
+#     case 'Rectangle'|'RECTANGLE'|'rectangle':
+#         length = int(input("Enter the length of rectangle : "))
+#         breadth = int(input("Enter the breadth of rectangle : "))
+#         area = length * breadth
+#         print("Area = ", area)
+#     case 'square'|'SQUARE'|'Square':
+#         side = int(input("Enter the side of square : "))
+#         area = side * side
+#         print("Area = ", area)
+#     case 'triangle'|'Triangle'|'TRIANGLE':
+#         base = int(input("Enter the base of triangle : "))
+#         height = int(input("Enter the height of triangle : "))
+#         area = 0.5 * base * height
+#         print("area = ", area)
+#     case _:
+#         print("Invalid shape")
+
+# #6. THE UNIT CONVERSION DESK
+# A student chooses one conversion: Celsius -> Fahrenheit, Fahrenheit -> Celsius, Kilometers -> Meters,
+# or Meters -> Kilometers. The program then accepts the value and displays the converted result
+# print("Choose the conversion ")
+# print("1. Celsius -> Fahrenheit")
+# print("2. Fahrenheit -> Celsius ")
+# print("3. Kilometers -> Meters")
+# print("4. Meters -> Kilometers")
+# choice = int(input("Enter the choice from (1-4) = "))
+# if(choice<1 or choice>4):
+#     print("Invalid choice")
+
+# value = int(input("Enter the value ="))
+# match choice:
+#     case 1:
+#         Fahrenheit = (value * 9/5)+32
+#         print(f"{value} Celsius = {Fahrenheit} Fahrenheit ")
+#     case 2:
+#         celsius = (value-32.0)*5/9
+#         print(f" {value} Fahreneit = {celsius} celsius ")
+#     case 3:
+#         print(f"{value}km = {value * 1000} m")
+#     case 4:
+#         print(f"{value} m = {value/1000} m")
+#     case _:
+#         print("Invalid choice!")
+
+# #7. THE ENGINEERING MEASUREMENT ASSISTANT
+# First ask what the student wants to calculate: Area or Volume. If Area is selected, offer Rectangle, Circle,
+# or Right-Angle Triangle. If Volume is selected, offer Cone, Cuboid, or Sphere. Then ask only for the
+# dimensions required by the chosen shape/solid.
+# import math 
+# print("----GEOMETRY CALCULATOR-----")
+# print("What you want to calculate?")
+# print("1. Area ") 
+# print("2. Volume")
+
+# calculation_choice = input("Enter your choice : ").strip().lower()
+
+# match calculation_choice:
+#     case 'area':
+#         print("you have three options : Rectangle, triangle, circle ")
+#         shape = input("Enter the shape : ").strip().lower()
+#         match shape:
+#             case 'rectangle':
+#                 length = int(input("Enter the length of rectangle : "))
+#                 breadth = int(input("Enter the breadth of rectangle : "))
+#                 area = length * breadth
+#                 print("Area = ", area)
+#             case 'triangle':
+#                 base = int(input("Enter the base of triangle : "))
+#                 height = int(input("Enter the height of triangle : "))
+#                 area = 0.5 * base * height
+#                 print("area = ", area)
+#             case 'circle':
+#                 radius = int(input("Enter the radius of circle :  "))
+#                 area = math.pi * radius**2
+#                 print("area = ", area)
+#     case 'volume':
+#         print("You have three options : Cone, Cuboid, or Sphere")
+#         shape = input("Enter the shape : ").strip().lower()
+#         match shape:
+#             case 'cone':
+#                 height = int(input("Enter the height of cone : "))
+#                 radius = int(input("Enter the radius of cone : "))
+#                 volume = 0.33 * math.pi * radius * height
+#                 print(f"Volume is = {volume}")
+#             case 'cuboid':
+#                 height = int(input("Enter the height of cuboid : "))
+#                 length = int(input("Enter the length of cuboid : "))
+#                 breadth = int(input("Enter the breadth of cuboid : "))
+#                 volume = length * breadth * height
+#                 print(f"Volume is {volume}")
+#             case 'sphere':
+#                 radius = int(input("Enter the radius of sphere : "))
+#                 volume = 1.33 * math.pi * (radius**3)
+#                 print(f"Volume is {volume}")
+#     case _:
+#         print("INVALID CHOICE!!")
+
+# #8.  king vikramadtiya's nava ratna - final position
+
+
+
+#// // ---------- SET 4 ------------
+#// // 1. THE SENSOR MONITORING SYSTEM +2 +3 
+
+# print("Monitoring session starts (Enter 0 to end the session)")
+# # input_count = 0
+# total_count = 0
+# total_sum = 0
+# while True:
+#     user_input = input("Enter the reading : ")
+#     try:
+#         reading = float(user_input)
+#     except ValueError:
+#         print("Invalid number! Try another number ")
+#         continue
+
+#     if reading == 0:
+#         print("Session end")
+#         break
+#     # input_count +=1
+#     print(f"Recorded reading = {reading}")
+#     # print(f"count = {input_count}")
+#     total_count += 1
+#     total_sum += reading
+# print(f"count = {total_count}")
+# print(f"Total production = {total_sum}")
+
+# # 4. 4. THE QUALITY ANALYSIS SYSTEM
+
+# print("Monitoring session starts (Enter 0 to end the session)")
+# even_count = 0
+# odd_count = 0
+# even_sum = 0
+# odd_sum = 0
+# while True:
+#     user_input = input("Enter the reading : ")
+#     try:
+#         reading = float(user_input)
+#     except ValueError:
+#         print("Invalid number! Try another number ")
+#         continue
+
+#     if reading == 0:
+#         print("Session end")
+#         break
+#     if(reading % 2 == 0):
+#         even_count += 1
+#         even_sum += reading
+#     else:
+#         odd_count += 1
+#         odd_sum += reading
+#     print(f"Recorded reading = {reading}")
+
+# print(f"Even count = {even_count}")
+# print(f"Odd count = {odd_count}")
+# print(f"Even sum = {even_sum}")
+# print(f"Odd sum = {odd_sum}")
+
+# // // 5.THE NUMBER GUESSING GAME
+# import random
+# random_num = random.randint(1, 100)
+# while True:
+#     guess = int(input("Enter the number : "))
+
+#     if(random_num > guess):
+#         print("Try higher")
+#     elif(random_num < guess):
+#         print("Try lower")
+#     else:
+#         print("correct")
+#         break
+
+#// // 6. SECRET VAULT PASSWORD 
+# password = 1234
+# wrong_pass = 0
+# while True:
+#     user_input = int(input("Enter the number : "))
+#     if(user_input == password):
+#         print("Vault opened")
+#     else:
+#         print("Wrong pawword!")
+#         wrong_pass +=1
+#         if(wrong_pass == 3):
+#             print("Access denied")
+#             break
+
+# # 7. TARGET NUMBER CHALLENEGE
+# Target = 12
+# failed_attempt = 0
+# while True:
+#     user_input = int(input("Enter the number : "))
+#     if(user_input == Target):
+#         print("Target hit")
+#     else:
+#         if(user_input > Target):
+#             print("Target is lower")
+#         elif(user_input < Target):
+#             print("Target is higher")
+#             failed_attempt +=1
+#         if(failed_attempt == 3):
+#             print("Access denied")
+#             break
+
