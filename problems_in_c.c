@@ -1052,31 +1052,56 @@ the student. Your task is to write a code  to perform these calculations. */
 // }
 
 // //7. TARGET NUMBER CHALLENGE
+// #include<stdio.h>
+// int main(){
+//     int secret_num = 10;
+//     int guess;
+//     int failed_attempts = 0;
+//     XYZ:
+//     printf("Enter the number : ");
+//     scanf("%d", &guess);
+//     if(secret_num == guess){
+//         goto ABC;
+//     }else{
+//         if(secret_num > guess){
+//             printf("Target is higher\n");
+//         }
+//         if(secret_num < guess){
+//             printf("Target is lower\n");
+//         }
+//         failed_attempts ++;
+//         if(failed_attempts == 5){
+//             printf("Target missed!");
+//             return 0;
+//         }
+//         goto XYZ;
+//     }
+    
+//     ABC:
+//     printf("Target hit ;)");
+// }
+
+// //8. DIGITAL SUM
 #include<stdio.h>
 int main(){
-    int secret_num = 10;
-    int guess;
-    int failed_attempts = 0;
-    XYZ:
+    int num;
     printf("Enter the number : ");
-    scanf("%d", &guess);
-    if(secret_num == guess){
-        goto ABC;
-    }else{
-        if(secret_num > guess){
-            printf("Target is higher\n");
-        }
-        if(secret_num < guess){
-            printf("Target is lower\n");
-        }
-        failed_attempts ++;
-        if(failed_attempts == 5){
-            printf("Target missed!");
-            return 0;
-        }
-        goto XYZ;
+    scanf("%d", &num);
+    outer:
+    if(num > 0){
+        int sum = 0;
+        int lastDigit = num;
+    inner:
+    if(lastDigit > 0){
+        sum += lastDigit % 10;
+        lastDigit /=10;
+        goto inner;
+
     }
-    
-    ABC:
-    printf("Target hit ;)");
+    printf("Sum for  %d", num);
+    printf(" = %d\n",sum);
+    num/=10;
+    goto outer;
+}
+return 0;
 }

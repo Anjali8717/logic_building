@@ -637,3 +637,16 @@
 #             print("Access denied")
 #             break
 
+# # DIGITAL SUM
+num = int(input("Enter the number : "))
+
+while num>0:
+    total_sum =0
+    last_digit = num
+
+    while last_digit > 0:
+        total_sum += last_digit % 10
+        last_digit //= 10
+
+    print(f"Sum for {num} ={total_sum}")
+    num //= 10

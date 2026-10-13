@@ -1085,3 +1085,28 @@ the student. Your task is to write a code  to perform these calculations. */
 //     ABC:
 //     cout<<"Target hit ;)";
 // }
+
+// // 8. DIGITAL SUM
+#include<iostream>
+using namespace std;
+int main(){
+    int num;
+    cout<<"Enter the number : ";
+    cin>>num;
+    outer:
+    if(num > 0){
+        int sum = 0;
+        int lastDigit = num;
+    inner:
+    if(lastDigit > 0){
+        sum += lastDigit % 10;
+        lastDigit /=10;
+        goto inner;
+
+    }
+    cout<<"Sum for "<<num<< "="<<sum<<endl;
+    num/=10;
+    goto outer;
+}
+return 0;
+}
